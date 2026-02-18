@@ -59,6 +59,8 @@ export default {
         },
         "ramzan-gold": "hsl(var(--ramzan-gold))",
         "ramzan-green": "hsl(var(--ramzan-green))",
+        "ramzan-dark-green": "hsl(var(--ramzan-dark-green))",
+        "ramzan-cream": "hsl(var(--ramzan-cream))",
         "sellkar-brand": "hsl(var(--sellkar-brand))",
         "sellkar-btn": "hsl(var(--sellkar-btn))",
         "sellkar-btn-hover": "hsl(var(--sellkar-btn-hover))",
