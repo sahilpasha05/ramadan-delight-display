@@ -1,80 +1,84 @@
 import ramzanBg from "@/assets/ramzan-bg.jpg";
-import FallingElements from "@/components/FallingElements";
-import FloatingIcons from "@/components/FloatingIcons";
+import { Check, Shield, Truck, Zap } from "lucide-react";
+
+const trustItems = [
+  { icon: Shield, text: "Best Price Guaranteed" },
+  { icon: Truck, text: "Free Doorstep Pickup" },
+  { icon: Zap, text: "Instant Payment" },
+];
 
 const Index = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* Background */}
+      {/* Gradient background */}
+      <div className="absolute inset-0 bg-ramzan-gradient" />
+
+      {/* Device image – subtle behind content */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center opacity-20"
         style={{ backgroundImage: `url(${ramzanBg})` }}
       />
-      <div className="absolute inset-0 bg-ramzan-overlay" />
-
-      {/* Falling elements */}
-      <FallingElements />
-
-      {/* Floating icons */}
-      <FloatingIcons />
 
       {/* Content */}
-      <div className="relative z-30 flex flex-col items-center min-h-screen px-4 py-8">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
         {/* Brand */}
-        <div className="text-center mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
-          <h1 className="font-brand text-5xl md:text-7xl tracking-[0.3em] text-sellkar-brand">
+        <div className="text-center mb-10">
+          <h1 className="font-brand text-4xl md:text-6xl tracking-[0.3em] text-ramzan-cream">
             SELLKAR
           </h1>
           <div className="flex items-center justify-center gap-4 mt-1">
-            <span className="w-16 h-[2px] bg-sellkar-brand" />
-            <span className="font-brand text-lg tracking-[0.5em] text-sellkar-brand">
+            <span className="w-12 h-[1px] bg-ramzan-gold/60" />
+            <span className="font-brand text-sm tracking-[0.5em] text-ramzan-gold">
               INDIA
             </span>
-            <span className="w-16 h-[2px] bg-sellkar-brand" />
+            <span className="w-12 h-[1px] bg-ramzan-gold/60" />
           </div>
-        </div>
-
-        {/* Crescent decorations */}
-        <div className="flex items-center gap-3 mb-4">
-          <span className="text-ramzan-gold text-2xl">☪</span>
-          <span className="text-ramzan-gold text-lg">✦</span>
-          <span className="text-ramzan-gold text-2xl">☪</span>
+          <p className="text-ramzan-cream/60 text-xs tracking-widest mt-2 uppercase">
+            India's Trusted Gadget Resale Platform
+          </p>
         </div>
 
         {/* Main Card */}
-        <div className="bg-ramzan-cream/90 backdrop-blur-md rounded-2xl shadow-ramzan p-8 md:p-12 max-w-2xl w-full text-center border-2 border-ramzan-gold/40">
-          <h2 className="font-display text-3xl md:text-5xl text-ramzan-dark-green mb-3">
-            Ramzan Mubarak 2026!
-          </h2>
+        <div className="bg-ramzan-cream/95 backdrop-blur-xl rounded-3xl shadow-ramzan-card p-8 md:p-14 max-w-2xl w-full text-center">
+          {/* Crescent accent */}
+          <span className="text-ramzan-gold text-3xl mb-4 inline-block">☪</span>
 
-          <p className="text-xl md:text-2xl font-semibold text-ramzan-dark-green/80 mb-4">
-            Celebrate the Holy Month – Sell Smart!
+          <h2 className="font-display text-3xl md:text-[2.75rem] leading-tight text-ramzan-dark-green mb-4">
+            Ramzan Mubarak 🌙
+          </h2>
+          <p className="font-display text-xl md:text-2xl text-ramzan-dark-green/90 mb-2">
+            Turn Old Gadgets into Blessings
           </p>
 
-          <div className="flex items-start gap-2 justify-center mb-6">
-            <span className="text-ramzan-gold text-xl mt-1">☪</span>
-            <p className="text-ramzan-dark-green/70 text-base md:text-lg leading-relaxed max-w-lg font-medium">
-              This Ramzan, turn your old gadgets into instant cash! Get the best
-              prices, hassle-free pickup, and celebrate the blessed month with
-              extra blessings in your pocket.
-            </p>
+          <p className="text-ramzan-dark-green/60 text-base md:text-lg leading-relaxed max-w-lg mx-auto mb-8">
+            Sell your unused phone, laptop, or tablet in minutes — get instant
+            value and hassle-free pickup during the holy month.
+          </p>
+
+          {/* Trust indicators */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-8">
+            {trustItems.map((item) => (
+              <div key={item.text} className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-full bg-ramzan-green/10 flex items-center justify-center">
+                  <item.icon className="w-3.5 h-3.5 text-ramzan-green" />
+                </div>
+                <span className="text-ramzan-dark-green/80 text-sm font-medium">
+                  {item.text}
+                </span>
+              </div>
+            ))}
           </div>
 
-          <button className="bg-sellkar-btn hover:bg-sellkar-btn-hover text-sellkar-btn-text font-bold text-lg px-10 py-4 rounded-lg tracking-wider transition-all duration-300 hover:shadow-lg hover:scale-105">
-            SELL NOW
+          {/* CTA */}
+          <button className="bg-ramzan-green hover:bg-ramzan-gold text-ramzan-cream hover:text-ramzan-dark-green font-bold text-lg px-12 py-4 rounded-xl tracking-wide transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
+            Get My Best Price
           </button>
         </div>
 
-        {/* Bottom decoration */}
-        <div className="mt-8 flex items-center gap-2 text-ramzan-gold text-sm drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)]">
-          <span>✦</span>
-          <span>☪</span>
-          <span>✦</span>
-          <span className="mx-2 text-ramzan-cream font-semibold">Blessed Deals This Ramzan</span>
-          <span>✦</span>
-          <span>☪</span>
-          <span>✦</span>
-        </div>
+        {/* Subtle bottom line */}
+        <p className="mt-8 text-ramzan-cream/40 text-xs tracking-widest uppercase">
+          ✦ Blessed Deals This Ramzan ✦
+        </p>
       </div>
     </div>
   );
