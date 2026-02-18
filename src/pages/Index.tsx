@@ -21,7 +21,7 @@ const Index = () => {
       {/* Content */}
       <div className="relative z-30 flex flex-col items-center min-h-screen px-4 py-8">
         {/* Brand */}
-        <div className="text-center mb-6">
+        <div className="text-center mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
           <h1 className="font-brand text-5xl md:text-7xl tracking-[0.3em] text-sellkar-brand">
             SELLKAR
           </h1>
@@ -42,18 +42,18 @@ const Index = () => {
         </div>
 
         {/* Main Card */}
-        <div className="bg-card/85 backdrop-blur-md rounded-2xl shadow-ramzan p-8 md:p-12 max-w-2xl w-full text-center border border-ramzan-gold/20">
-          <h2 className="font-display text-3xl md:text-5xl text-ramzan-green mb-3">
+        <div className="bg-ramzan-cream/90 backdrop-blur-md rounded-2xl shadow-ramzan p-8 md:p-12 max-w-2xl w-full text-center border-2 border-ramzan-gold/40">
+          <h2 className="font-display text-3xl md:text-5xl text-ramzan-dark-green mb-3">
             Ramzan Mubarak 2026!
           </h2>
 
-          <p className="text-xl md:text-2xl font-semibold text-foreground mb-4">
+          <p className="text-xl md:text-2xl font-semibold text-ramzan-dark-green/80 mb-4">
             Celebrate the Holy Month – Sell Smart!
           </p>
 
           <div className="flex items-start gap-2 justify-center mb-6">
             <span className="text-ramzan-gold text-xl mt-1">☪</span>
-            <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-lg">
+            <p className="text-ramzan-dark-green/70 text-base md:text-lg leading-relaxed max-w-lg font-medium">
               This Ramzan, turn your old gadgets into instant cash! Get the best
               prices, hassle-free pickup, and celebrate the blessed month with
               extra blessings in your pocket.
@@ -66,11 +66,11 @@ const Index = () => {
         </div>
 
         {/* Bottom decoration */}
-        <div className="mt-8 flex items-center gap-2 text-ramzan-gold/60 text-sm">
+        <div className="mt-8 flex items-center gap-2 text-ramzan-gold text-sm drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)]">
           <span>✦</span>
           <span>☪</span>
           <span>✦</span>
-          <span className="mx-2 text-muted-foreground">Blessed Deals This Ramzan</span>
+          <span className="mx-2 text-ramzan-cream font-semibold">Blessed Deals This Ramzan</span>
           <span>✦</span>
           <span>☪</span>
           <span>✦</span>

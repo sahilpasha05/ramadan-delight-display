@@ -28,9 +28,11 @@
     --radius: 0.5rem;
 
     /* Ramzan theme */
-    --ramzan-gold: 40 90% 55%;
-    --ramzan-green: 145 60% 28%;
-    --ramzan-overlay: 35 80% 20%;
+    --ramzan-gold: 40 95% 58%;
+    --ramzan-green: 150 70% 22%;
+    --ramzan-dark-green: 150 80% 12%;
+    --ramzan-cream: 40 60% 95%;
+    --ramzan-overlay: 35 80% 10%;
 
     /* SellKar brand - preserved */
     --sellkar-brand: 210 50% 20%;
