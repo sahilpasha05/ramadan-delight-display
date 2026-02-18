@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "ramzan-gold": "hsl(var(--ramzan-gold))",
+        "ramzan-green": "hsl(var(--ramzan-green))",
+        "sellkar-brand": "hsl(var(--sellkar-brand))",
+        "sellkar-btn": "hsl(var(--sellkar-btn))",
+        "sellkar-btn-hover": "hsl(var(--sellkar-btn-hover))",
+        "sellkar-btn-text": "hsl(var(--sellkar-btn-text))",
+      },
+      boxShadow: {
+        ramzan: "0 8px 40px -10px hsl(var(--ramzan-gold) / 0.3)",
+      },
+      backgroundImage: {
+        "ramzan-overlay": "linear-gradient(180deg, hsl(var(--ramzan-overlay) / 0.3) 0%, hsl(var(--ramzan-overlay) / 0.5) 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",
