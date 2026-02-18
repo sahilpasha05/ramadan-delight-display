@@ -61,17 +61,16 @@ export default {
         "ramzan-green": "hsl(var(--ramzan-green))",
         "ramzan-dark-green": "hsl(var(--ramzan-dark-green))",
         "ramzan-cream": "hsl(var(--ramzan-cream))",
-        "ramzan-overlay": "hsl(var(--ramzan-overlay))",
         "sellkar-brand": "hsl(var(--sellkar-brand))",
         "sellkar-btn": "hsl(var(--sellkar-btn))",
         "sellkar-btn-hover": "hsl(var(--sellkar-btn-hover))",
         "sellkar-btn-text": "hsl(var(--sellkar-btn-text))",
       },
       boxShadow: {
-        "ramzan-card": "0 20px 60px -15px hsl(var(--ramzan-gold) / 0.15), 0 4px 20px -5px rgba(0,0,0,0.1)",
+        ramzan: "0 8px 40px -10px hsl(var(--ramzan-gold) / 0.3)",
       },
       backgroundImage: {
-        "ramzan-gradient": "linear-gradient(160deg, hsl(var(--ramzan-overlay)) 0%, hsl(var(--ramzan-green)) 50%, hsl(var(--ramzan-overlay)) 100%)",
+        "ramzan-overlay": "linear-gradient(180deg, hsl(var(--ramzan-overlay) / 0.3) 0%, hsl(var(--ramzan-overlay) / 0.5) 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",
